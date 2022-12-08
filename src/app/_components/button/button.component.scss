@@ -1,0 +1,30 @@
+.btn {
+  margin: 0;
+  padding: 0.5em 0;
+  border-radius: 4%;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  height: 3em;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007AFF;
+  width: 360px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}

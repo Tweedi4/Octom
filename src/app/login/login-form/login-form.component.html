@@ -1,0 +1,35 @@
+<form class="form-login">
+  <h2>Nice to see you again</h2>
+  <label>Login</label>
+  <app-input
+    label="Email or phone number"
+    type="text"
+    (inputEmitter)="recupEmail($event)"
+  ></app-input>
+  <label>Password</label>
+  <app-input
+    label="Enter password"
+    type="password"
+    (inputEmitter)="recupPassword($event)"
+  ></app-input>
+  <div class="check">
+    <div>
+      <input type="checkbox" class="apple-switch" />
+      <label>Remember me</label>
+    </div>
+    <a routerLink="/login/forgot-password">Forgot password</a>
+  </div>
+  <app-button type="submit" className="btn-primary">Sign in</app-button>
+  <app-button type="button" className="btn-secondary">
+    <span>Or sign in with Google</span>
+  </app-button>
+  <div class="no-account">
+    <p>
+      Don't have an account?
+      <a routerLink="/login/register">Sign up now</a>
+    </p>
+  </div>
+  <!--
+    error message
+  -->
+</form>

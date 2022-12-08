@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.login {
+    background-color: white;
+    display: flex;
+    height: 100%;
+    .boat-img {
+        width: 72%;
+    }
+
+    .logo-display {
+      display: flex;
+      margin-left: 80px;
+      margin-top: 50px;
+      margin-bottom: 40px;
+    }
+
+    .logo-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: bolder !important;
+      font-size: large !important;
+      margin-left: 10px;
+    }
+
+
+}
+

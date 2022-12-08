@@ -1,0 +1,15 @@
+
+<div class="sidebar">
+    <img class="logo" src="/assets/images/logo.png" alt="logo octom">
+
+    <nav class="nav" role="navigation">
+        <ul>
+          <ng-container *ngFor="let item of items" role="navigation">
+            <li routerLink='/{{item}}' routerLinkActive="is-active" title="{{item}}">
+              <img src="/assets/images/share.svg" alt="share icon">
+            </li>
+          </ng-container>
+        </ul>
+      </nav>
+</div>
+
