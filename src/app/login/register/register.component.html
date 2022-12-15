@@ -1,1 +1,33 @@
-<app-login></app-login>
+      <form class="form-login">
+        <h2>Nice to see you again</h2>
+        <label>Email</label>
+        <app-input
+          label="Email or phone number"
+          type="text"
+          (inputEmitter)="emailRegister($event)"
+        ></app-input>
+        <label>Password</label>
+        <app-input
+          label="Enter password"
+          type="password"
+          (inputEmitter)="passwordRegister($event)"
+        ></app-input>
+        <label>Confirm Password</label>
+        <app-input
+          label="Enter password"
+          type="password"
+          (inputEmitter)="passwordConfRegister($event)"
+        ></app-input>
+        <div class="check">
+          <div>
+            <input type="checkbox" class="apple-switch" />
+            <label>Remember me</label>
+          </div>
+          <a routerLink="">Forgot password</a>
+        </div>
+        <app-button type="submit" className="btn-primary">Log in</app-button>
+        <app-button type="button" className="btn-secondary">
+          <span>Log in with Google</span>
+        </app-button>
+          error message
+      </form>

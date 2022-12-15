@@ -54,7 +54,7 @@ const routes: Routes = [
     component: LoginComponent,
     children: [
       {
-        path: 'login-form',
+        path: '',
         component: LoginFormComponent,
         title: parentTitle + 'login-form'
       },
