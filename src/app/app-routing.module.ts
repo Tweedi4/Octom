@@ -18,7 +18,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 const parentTitle = 'Octom - '
 
 const routes: Routes = [
-
+/*
   {
     path: 'dashboard',
     component: DashboardComponent,
@@ -48,25 +48,23 @@ const routes: Routes = [
     component: FilesComponent,
     title: parentTitle + 'files'
   },
+  */
 
   {
     path: 'login',
     component: LoginComponent,
     children: [
       {
-        path: '',
+        path: 'login-form',
         component: LoginFormComponent,
-        title: parentTitle + 'login-form'
       },
       {
         path: 'register',
         component: RegisterComponent,
-        title: parentTitle + 'register'
       },
       {
         path: 'forgot-password',
         component: ForgotPasswordComponent,
-        title: parentTitle + 'forgot password'
       },
       {
         path: '',
