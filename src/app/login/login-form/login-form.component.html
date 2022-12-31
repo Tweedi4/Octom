@@ -1,16 +1,16 @@
-<form class="form-login">
+<form [formGroup]="loginForm" class="form-login" (ngSubmit)="loginSubmit()">
   <h2>Nice to see you again</h2>
-  <label>Login</label>
   <app-input
-    label="Email or phone number"
+    label="Login"
     type="text"
-    (inputEmitter)="recupEmail($event)"
+    placeholder="Enter email"
+    id="email"
   ></app-input>
-  <label>Password</label>
   <app-input
-    label="Enter password"
+    label="Password"
     type="password"
-    (inputEmitter)="recupPassword($event)"
+    placeholder="Enter password"
+    id="password"
   ></app-input>
   <div class="check">
     <div>

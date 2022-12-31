@@ -14,9 +14,11 @@ export class ButtonComponent {
   clickEmitter: EventEmitter<any|null> = new EventEmitter<any|null>();
 
   ngOnInit(): void {
+/*
     if (this.type === 'submit') {
       this.click = this.clickEmitter;
     }
+*/
   }
 
 }

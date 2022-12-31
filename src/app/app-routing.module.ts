@@ -6,7 +6,6 @@ import { ForgotPasswordComponent } from './login/forgot-password/forgot-password
 import { RegisterComponent } from './login/register/register.component';
 import { LoginFormComponent } from './login/login-form/login-form.component';
 
-
 import { SettingsComponent } from './_pages/settings/settings.component';
 import { MessagesComponent } from './_pages/messages/messages.component';
 import { ActivityComponent } from './_pages/activity/activity.component';
@@ -15,7 +14,6 @@ import { FilesComponent } from './_pages/files/files.component';
 import { DashboardComponent } from './_pages/dashboard/dashboard.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
-const parentTitle = 'Octom - '
 
 const routes: Routes = [
 /*

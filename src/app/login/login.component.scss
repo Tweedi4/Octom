@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .login {
-    background-color: white;
+    background-color: #1E1F25;
     display: flex;
     height: 100%;
     .boat-img {
@@ -16,6 +16,7 @@
     }
 
     .logo-title {
+      color: white;
       font-family: 'Poppins', sans-serif;
       font-weight: bolder !important;
       font-size: large !important;

@@ -1,34 +1,59 @@
-      <form class="form-login">
-        <h2>Nice to see you</h2>
-        <app-input
-          label="Email or phone number"
-          type="text"
-          (inputEmitter)="emailRegister($event)"
-        ></app-input>
-        <app-input
-          label="Enter password"
-          type="password"
-          (inputEmitter)="passwordRegister($event)"
-        ></app-input>
-        <app-input
-          label="Enter password"
-          type="password"
-          (inputEmitter)="passwordConfRegister($event)"
-        ></app-input>
-        <div class="check">
-          <div>
-            <input type="checkbox" class="apple-switch" />
-            <label>Remember me</label>
-          </div>
-        </div>
-        <app-button type="submit" className="btn-primary">Register</app-button>
-        <app-button type="button" className="btn-secondary">
-          <span>Register with Google</span>
-        </app-button>
-        <div class="no-account">
-          <p>
-             Have an account?
-            <a routerLink="/login/login-form">Log in now</a>
-          </p>
-        </div>
-      </form>
+<form
+  id="register"
+  [formGroup]="formControler"
+  (ngSubmit)="registerSubmit()"
+  class="form-login"
+>
+  <h2>Nice to see you</h2>
+  <app-input
+    formControlName="username"
+    label="Username"
+    type="text"
+    placeholder="Enter username"
+    id="username"
+  ></app-input>
+  <app-input
+    formControlName="email"
+    label="Email"
+    type="email"
+    placeholder="Enter email address"
+    id="email"
+  ></app-input>
+  <app-input
+    formControlName="phone"
+    label="Phone"
+    type="text"
+    placeholder="0745146395"
+    id="phone"
+  ></app-input>
+  <app-input
+    formControlName="password"
+    label="Enter password"
+    type="password"
+    placeholder="Enter password"
+    id="password"
+  ></app-input>
+  <app-input
+    formControlName="passwordConfirm"
+    label="Confirm password"
+    type="password"
+    placeholder="Confirm your password"
+    id="passwordConfirm"
+  ></app-input>
+  <div class="check">
+    <div>
+      <input type="checkbox" class="apple-switch" />
+      <label>Remember me</label>
+    </div>
+  </div>
+  <app-button type="submit" className="btn-primary">Register</app-button>
+  <app-button type="button" className="btn-secondary">
+    <span>Register with Google</span>
+  </app-button>
+  <div class="no-account">
+    <p>
+      Have an account?
+      <a routerLink="/login/login-form">Log in now</a>
+    </p>
+  </div>
+</form>
